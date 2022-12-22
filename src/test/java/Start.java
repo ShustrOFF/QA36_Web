@@ -29,5 +29,25 @@ public class Start {
         WebElement el6 = wd.findElement(By.className("css-164r41r"));
         //WebElement el7 = wd.findElement(By.className("username-readonly hidden"));
         WebElement el8 = wd.findElement(By.linkText("Log in"));
+
+
+        //css
+        WebElement el1c = wd.findElement(By.cssSelector("#user"));
+        WebElement el2c = wd.findElement(By.cssSelector(".username-readonly"));
+        WebElement el3c = wd.findElement(By.cssSelector("[data-testid='header-member-menu-button]"));
+
+        //login
+        WebElement log1 = wd.findElement(By.cssSelector("[href='/login']"));
+        WebElement log2 = wd.findElement(By.cssSelector("#user"));
+        WebElement log3 = wd.findElement(By.cssSelector("#login"));
+        WebElement log4 = wd.findElement(By.cssSelector("#password"));
+        WebElement log5 = wd.findElement(By.cssSelector("#login-submit"));
+
+        //
+        WebElement log11 = wd.findElement(By.cssSelector("[aria-label='Trello']"));
+        WebElement log121 = wd.findElement(By.cssSelector("[aria-label $='llo']"));//ends
+        WebElement log31 = wd.findElement(By.cssSelector("[aria-label ^='Tr']"));//starts
+        WebElement log41 = wd.findElement(By.cssSelector("[aria-label *='rell']"));//contains
+
     }
 }
